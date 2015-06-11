@@ -41,7 +41,7 @@
         <div class="col-sm-8">
           <div class="shop-menu pull-right">
             <ul class="nav navbar-nav">
-              <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Carrello</a></li>
+              <li><a href="cart.php"><i class="fa fa-shopping-cart"></i> Carrello</a></li>
             </ul>
           </div>
         </div>
@@ -67,7 +67,7 @@
               <li class="dropdown"><a href="#">Negozio<i class="fa fa-angle-down"></i></a>
                                   <ul role="menu" class="sub-menu">
                   <li><a href="product-details.php">Dettagli prodotti</a></li>
-                  <li><a href="cart.html">Carrello</a></li>
+                  <li><a href="cart.php">Carrello</a></li>
                                   </ul>
                               </li>
             </ul>
