@@ -29,7 +29,7 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="logo pull-left">
-            <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+            <a href="index.php"><img src="images/home/logo.png" alt="" /></a>
           </div>
           <div class="btn-group pull-right">
             <div class="btn-group">
@@ -63,11 +63,10 @@
           </div>
           <div class="mainmenu pull-left">
             <ul class="nav navbar-nav collapse navbar-collapse">
-              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="index.php" class="active">Home</a></li>
               <li class="dropdown"><a href="#">Negozio<i class="fa fa-angle-down"></i></a>
                                   <ul role="menu" class="sub-menu">
-                                      <li><a href="shop.html">Prodotti</a></li>
-                  <li><a href="product-details.html">Dettagli prodotti</a></li>
+                  <li><a href="product-details.php">Dettagli prodotti</a></li>
                   <li><a href="cart.html">Carrello</a></li>
                                   </ul>
                               </li>
