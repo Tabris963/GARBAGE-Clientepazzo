@@ -1,17 +1,53 @@
 <?php
 
-    require("config.php");
-    $con = mysqli_connect($server, $username, $password, $database) or die("DB not connected!");
+    /*Functions declaration*/
+	  function createConnection(){
+      //-Declaration DB connection parameters
+      require("config.php");
 
-    $result = mysqli_query($con, "SELECT id, nome, descrizione, prezzo FROM prodotti limit 10") or die("Query error!");
+		  // Create connection
+		  $conn = new mysqli($servername, $username, $password, $dbname);
+		  // Check connection
+		  if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+		  }
+		  return $conn;
+	  }
+
+    function closeConnection($conn){
+      $conn->close();
+	  }
+
+    /*Beginning of the running code*/
+    $conn = createConnection();
+
+
+    /*$result = mysqli_query($conn, "SELECT id, nome, descrizione, prezzo FROM prodotti") or die("Query error!");
 
     $products = array();
 
     while($l = mysqli_fetch_assoc($result)){
       array_push($products, array("id" => $l['id'], "name" => $l['nome'], "description" => $l['descrizione'], "price" => $l['prezzo']));
+    }*/
+
+    $sql = "SELECT * FROM prodotti ";
+    $result = $conn->query($sql);
+    $resultArray = array();
+
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()){
+        $resultArray[] = $row;
+      }
+      print json_encode($resultArray);
+    } else {
+      echo "0 results";
     }
 
-    header('Content-Type: application/json');
+    //header('Content-Type: application/json');
 
-    echo json_encode(array("products" => $products));
-    mysqli_close($con);
+    /*print json_encode(array("products" => $products))."\n";
+    print "disagio\n";
+    print json_encode($products);*/
+
+    closeConnection($conn);

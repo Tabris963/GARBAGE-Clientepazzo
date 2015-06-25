@@ -1,6 +1,6 @@
 <?php
 
-  $server = "localhost";
+  $servername = "localhost";
   $username = "disagio";
   $password = "root";
-  $database = "ecomm_crazy_customer";
+  $dbname = "ecomm_crazy_customer";
