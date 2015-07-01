@@ -1,7 +1,9 @@
 <?php
 
+		header('Content-Type: application/json');
+
 		require("connectionModule.php");
-		
+
     /*Beginning of the running code*/
     $conn = createConnection();
 
@@ -14,11 +16,9 @@
       while($row = $result_tmp->fetch_assoc()){
         $results[]= $row;
       }
-			print 'numero elementi nell\'array result_tmp: '.count($result_tmp)."\n";
-			print 'numero elementi nell\'array results: '.count($results)."\n";
-			print 'results: '.(json_encode($results))."\n";
-    } else {
-      echo "0 results";
+			print json_encode(array("products" => $results));
     }
+
+
 
     closeConnection($conn);
