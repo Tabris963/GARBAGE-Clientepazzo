@@ -98,52 +98,14 @@
         <?php
           require_once("left-sidebar.php");
         ?>
-				<div class="col-sm-9 padding-right" id="allProd">
+				<div class="col-sm-9 padding-right">
           <div class='row'>
             <div class="features_items"><!--features_items-->
 						<h2 class="title text-center">#soloperveriPAZZI</h2>
 
+            <div class="row" id="allProd">
 
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/product4.jpg" alt="" />
-										<h2>€56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Aggiungi al carrello</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>€56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Aggiungi al carrello</a>
-										</div>
-									</div>
-									<img src="images/home/new.png" class="new" alt="" />
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo text-center">
-										<img src="images/home/product5.jpg" alt="" />
-										<h2>€56</h2>
-										<p>Easy Polo Black Edition</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Aggiungi al carrello</a>
-									</div>
-									<div class="product-overlay">
-										<div class="overlay-content">
-											<h2>€56</h2>
-											<p>Easy Polo Black Edition</p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Aggiungi al carrello</a>
-										</div>
-									</div>
-									<img src="images/home/sale.png" class="new" alt="" />
-								</div>
-							</div>
-						</div>
+            </div>
 
 					</div><!--features_items-->
 
