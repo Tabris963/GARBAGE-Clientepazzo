@@ -5,7 +5,7 @@
     /*Beginning of the running code*/
     $conn = createConnection();
 
-    $sql = "SELECT * FROM prodotti";
+    $sql = "SELECT * FROM prodotti LIMIT 1";
     $result_tmp = $conn->query($sql);
 		$results = array();
 
