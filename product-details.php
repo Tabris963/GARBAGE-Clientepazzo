@@ -40,16 +40,15 @@
           <div class="product-details">
 						<div class="col-sm-5">
 							<div class="view-product">
-								<img src="/images/product-details/biliardo_anni30.jpg" alt="" />
+								<img src="/images/products/"+sinleProduct.products[0].id+".jpg" alt="" />
 							</div>
 						</div>
             <div class="col-sm-1"></div>
 						<div class="col-sm-6">
 							<div class="">
-								<h3>BIGLIARDO ANNI 30</h3>
-								<span>
-									<h4>EUR €700</span></h4>
-									<button type="button" class="btn btn-fefault cart">
+								<span id="productName"></span>
+                <span id="productPrice"></span>
+								<span><button type="button" class="btn btn-fefault cart">
 										<i class="fa fa-shopping-cart"></i>
 										Aggiungi al carrello
 									</button>
@@ -67,11 +66,7 @@
               </ul>
             </div>
             <div class="col-sm-12">
-              <p>Biliardino da bar anni 30 completo di palle originali, sette buche sei palle bianche una palla rossa originali
-                 La struttura lignea è in ottime condizioni. Il panno verde molto usurato (vedere foto) le sponde sono in buone condizioni.
-                 In dotazione ci sono quattro stecche recenti Il mobile è sano stabile e con la patina originale.
-                 Considerata l'epoca possono essere presenti piccole imperfezioni.
-              </p>
+              <span id="productDescription"></span>
             </div>
           </div>
 
@@ -347,5 +342,6 @@
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/product-details.js"></script>
 </body>
 </html>

@@ -1,13 +1,11 @@
 <?php
-
 		header('Content-Type: application/json');
-
 		require("connectionModule.php");
 
     /*Beginning of the running code*/
     $conn = createConnection();
 
-    $sql = "SELECT * FROM prodotti";
+    $sql = "SELECT * FROM prodotti LIMIT 1";
     $result_tmp = $conn->query($sql);
 		$results = array();
 
@@ -17,13 +15,8 @@
         $results[]= $row;
       }
 			print json_encode(array("products" => $results));
-<<<<<<< HEAD
-=======
 		} else {
       echo "0 results";
->>>>>>> tb963-dev
     }
-
-
 
     closeConnection($conn);
