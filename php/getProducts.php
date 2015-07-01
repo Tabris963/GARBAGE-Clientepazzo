@@ -30,16 +30,25 @@
       array_push($products, array("id" => $l['id'], "name" => $l['nome'], "description" => $l['descrizione'], "price" => $l['prezzo']));
     }*/
 
-    $sql = "SELECT * FROM prodotti ";
-    $result = $conn->query($sql);
-    $resultArray = array();
+    $sql = "SELECT * FROM prodotti";
+    $result_tmp = $conn->query($sql);
+		$results = array();
+    //$resultArray = array();
 
-    if ($result->num_rows > 0) {
+    if ($result_tmp->num_rows > 0) {
       // output data of each row
-      while($row = $result->fetch_assoc()){
-        $resultArray[] = $row;
+      while($row = $result_tmp->fetch_assoc()){
+        $results[]= $row;
       }
-      print json_encode($resultArray);
+			//$resultArray=json_encode($results);
+			print 'numero elementi nell\'array result_tmp: '.count($result_tmp)."\n";
+			print 'numero elementi nell\'array results: '.count($results)."\n";
+			//print 'numero elementi nell\'array resultArray: '.count($resultArray)."\n";
+			print 'results: '.(json_encode($results))."\n";
+			//var_dump(($results));
+			//print_r(array_values($results));
+      //print 'resultArray: '.($resultArray)."\n";
+			//print 'I should have printed the resultArray';
     } else {
       echo "0 results";
     }
