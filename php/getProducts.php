@@ -17,11 +17,8 @@
         $results[]= $row;
       }
 			print json_encode(array("products" => $results));
-<<<<<<< HEAD
-=======
 		} else {
       echo "0 results";
->>>>>>> tb963-dev
     }
 
 
