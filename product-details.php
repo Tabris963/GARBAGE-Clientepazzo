@@ -39,9 +39,7 @@
 				<div class="col-sm-9 padding-right">
           <div class="product-details">
 						<div class="col-sm-5">
-							<div class="view-product">
-								<img src="/images/products/"+sinleProduct.products[0].id+".jpg" alt="" />
-							</div>
+							<div id="productImage" class="view-product"></div>
 						</div>
             <div class="col-sm-1"></div>
 						<div class="col-sm-6">
