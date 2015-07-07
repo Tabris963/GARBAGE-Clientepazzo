@@ -66,7 +66,7 @@
               <li><a href="index.php" class="active">Home</a></li>
               <li class="dropdown"><a href="#">Negozio<i class="fa fa-angle-down"></i></a>
                                   <ul role="menu" class="sub-menu">
-                  <li><a href="product-details.php">Dettagli prodotti</a></li>
+                  <!--<li><a href="product-details.php">Dettagli prodotti</a></li>-->
                   <li><a href="cart.php">Carrello</a></li>
                                   </ul>
                               </li>
