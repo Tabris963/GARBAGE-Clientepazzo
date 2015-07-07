@@ -25,14 +25,14 @@ function getProducts(){
         tmp += '<div class="product-image-wrapper"><div class="single-products"><div class="productinfo text-center">';
         tmp += '<img src="images/products/'+resp.products[i].id+'.jpg" alt="" />';
         tmp += '<h2>€'+resp.products[i].prezzo+'</h2><p>'+resp.products[i].nome+'</p>';
-        tmp += '<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Aggiungi al carrello</a>';
+        tmp += '<a href="product-details.php?id='+resp.products[i].id+'" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Aggiungi al carrello</a>';
         tmp += '</div><div class="product-overlay"><div class="overlay-content"><h2>€'+resp.products[i].prezzo+'</h2>';
         tmp += '<p>'+resp.products[i].nome+'</p>';
-        tmp += '<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Aggiungi al carrello</a>';
+        tmp += '<a href="product-details.php?id='+resp.products[i].id+'" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Aggiungi al carrello</a>';
         tmp += '</div></div></div></div></div>';
         $("#allProd").append(tmp);
       }
-      // 
+      //
       // var c = 0;
       // tmp = "";
       //
