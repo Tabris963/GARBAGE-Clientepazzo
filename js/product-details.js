@@ -19,8 +19,9 @@ function getSingleProduct(){
 }
 
 function popolateProduct(singleProduct){
-  console.log(singleProduct);
-  console.log(singleProduct.products[0].nome);
+  //console.log('singleProduct: ');
+  //console.log(singleProduct);
+  //console.log(singleProduct.products[0].nome);
   productName = '<h3>'
               + singleProduct.products[0].nome
               +'</h3>';
