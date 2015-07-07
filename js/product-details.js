@@ -30,7 +30,11 @@ function popolateProduct(singleProduct){
   productDescription = '<p>'
               + singleProduct.products[0].descrizione
               +'</p>';
+  productImage = '<img src="/images/products/'
+              +singleProduct.products[0].id
+              +'.jpg" alt="" />'
   document.getElementById("productName").innerHTML = productName;
   document.getElementById("productPrice").innerHTML = productPrice;
   document.getElementById("productDescription").innerHTML = productDescription;
+  document.getElementById("productImage").innerHTML = productImage;
 }
