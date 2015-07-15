@@ -11,6 +11,7 @@ body {
   background-color: #121212;
   position: relative;
   font-weight:400px;
+  color: rgb(210, 210, 210);
 }
 
 ul li {
@@ -200,7 +201,7 @@ a#scrollUp i{
 
 .shop-menu ul li a {
   background: #121212;
-  color: #a9a9a9;
+  color: rgb(210, 210, 210);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -240,7 +241,7 @@ a#scrollUp i{
 }
 
 .mainmenu ul li a {
-	color: #a9a9a9;
+	color: rgb(210, 210, 210);
 	font-family: 'Roboto', sans-serif;
 	font-size: 17px;
 	font-weight: 300;
@@ -256,7 +257,7 @@ a#scrollUp i{
 .search_box input {
   background: #696763;
   border: medium none;
-  color: #B2B2B2;
+  color: rgb(255, 255, 255);
   font-family: 'roboto';
   font-size: 12px;
   font-weight: 300;
@@ -608,7 +609,7 @@ ul.sub-menu {
 }
 
 .item h2 {
-  color: #363432;
+  color: rgb(210, 210, 210);
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -617,7 +618,7 @@ ul.sub-menu {
 }
 
 .item  p {
-	color:#363432;
+	color: rgb(210, 210, 210);
 	font-size:16px;
 	font-weight:300;
 	font-family: 'Roboto', sans-serif;
@@ -881,7 +882,7 @@ h2.title {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #696763;
+  color: rgb(210, 210, 210);
 }
 
 .productinfo img{
@@ -1340,7 +1341,7 @@ h2.title {
 }
 
 #reviews p{
-	color:#363432;
+	color: rgb(210, 210, 210);
 }
 
 #reviews  form span {
