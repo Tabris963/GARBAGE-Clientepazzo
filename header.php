@@ -61,17 +61,17 @@
               <span class="icon-bar"></span>
             </button>
           </div>
-          <div class="mainmenu pull-left">
+          <!--<div class="mainmenu pull-left">
             <ul class="nav navbar-nav collapse navbar-collapse">
               <li><a href="index.php" class="active">Home</a></li>
               <li class="dropdown"><a href="#">Negozio<i class="fa fa-angle-down"></i></a>
                                   <ul role="menu" class="sub-menu">
-                  <!--<li><a href="product-details.php">Dettagli prodotti</a></li>-->
+                  <li><a href="product-details.php">Dettagli prodotti</a></li>
                   <li><a href="cart.php">Carrello</a></li>
                                   </ul>
                               </li>
             </ul>
-          </div>
+          </div>-->
         </div>
         <div class="col-sm-3">
           <div class="search_box pull-right">
